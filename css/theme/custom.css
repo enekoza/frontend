@@ -76,3 +76,22 @@
 .hidden{
   visibility:  hidden;
 }
+
+
+.fragment.current-visible.visible.hide:not(.current-fragment) {
+    display: none;
+    height:0px;
+    line-height: 0px;
+    font-size: 0px;
+}
+
+.reveal .lg{
+  font-size: 4rem;
+}
+
+
+span.clouditem {
+  padding-left: 0.15em;
+  padding-right: 0.15em;
+  line-height: 90%;
+}
