@@ -1,23 +1,107 @@
-.reveal {
+/* VARIABLES */
 
-  font-size: 30px;
+$font-size-base: 30px;
 
-}
 
+$ejie-color-1: #009898;
+$ejie-color-2: #98d6d6;
+
+
+body {
+  background: #FFFFFF;
+  background-color: #FFFFFF; }
 
 /*COLORS*/
 
 .reveal{
+
+  font-size: $font-size-base;
+
   h1, h2, h3, h4, h5, h6{
-    color: #009898;
+    color: $ejie-color-1;
+  }
+
+  ul {
+    list-style: none; /* Remove list bullets */
+    padding: 0;
+    margin: 0;
+
+    ul {
+      list-style: none; /* Remove list bullets */
+      padding: 0;
+      margin: 0;
+
+      li {
+        padding-left: 48px;
+      }
+
+      li:before {
+        content: '■'; /* Insert content that looks like bullets */
+          padding-right: 8px;
+        color: $ejie-color-1; /* Or a color you prefer */
+      }
+    }
+
+    li {
+      padding-left: 16px;
+    }
+
+    li:before {
+      content: "•"; /* Insert content that looks like bullets */
+        padding-right: 8px;
+      color: $ejie-color-1; /* Or a color you prefer */
+    }
+  }
+
+
+
+  .img-logo{
+    border: 0;
+    position: fixed;
+    top:0;
+    left:0;
+    background: none;
+    box-shadow: none;
+    width: 14rem;
+  }
+
+  .ejie-shape2 {
+  	width: 2rem;
+  	height: 10%;
+  	background: $ejie-color-2;
+    position: fixed;
+    right: 60%;
+    top:40%;
+  }
+
+  .ejie-shape1 {
+  	width: 60%;
+  	height: 2rem;
+  	background: $ejie-color-2;
+    position: fixed;
+    right: 0;
+    top:40%;
+  }
+
+  .ejie-title{
+    position: fixed;
+    left: 40%;
+    padding-right: -6rem;
+    top: 52%;
   }
 }
 
 
+
+
 .ejie-color-1{
-  color: #009898;
+  color: $ejie-color-1;
 }
 
+
+.ejie-color-2{
+  color: $ejie-color-2;
+}
 
 
 .flex-content {
@@ -116,6 +200,9 @@ span.clouditem {
 .reveal section img.img-hover{
   border:0;
   position: fixed;
-  top: 0;
-  left: 0;
+  left: 8%;
+height: 80%;
+box-shadow: none;
+background: none;
+
 }
