@@ -62,6 +62,8 @@ body {
     left: 40%;
     padding-right: -6rem;
     top: 52%; }
+  .reveal blockquote {
+    color: grey; }
 
 .ejie-color-1 {
   color: #009898; }
@@ -109,7 +111,7 @@ body {
 .hidden {
   visibility: hidden; }
 
-.fragment.current-visible.visible.hide:not(.current-fragment) {
+.fragment.current-visible.hide:not(.current-fragment), .fragment.current-visible.visible.hide:not(.current-fragment) {
   display: none;
   height: 0px;
   line-height: 0px;

@@ -26,14 +26,14 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-external="lib/includes/front/index.html"></section>
-				<section data-external="lib/includes/intro/index.html"></section>
-				<section data-external="lib/includes/loaders/index.html"></section>
-				<section data-external="lib/includes/modules/index.html"></section>
-				<section data-external="lib/includes/es6-modules/index.html"></section>
-				<section data-external="lib/includes/transpilers/index.html"></section>
-				<section data-external="lib/includes/patrones/index.html"></section>
-				<section data-external="lib/includes/patronesMv/index.html"></section>
+				<section data-background-image="img/background_1.png" data-background-size="contain" data-external="lib/includes/front/index.html"></section>
+				<section data-background-image="img/background_2.png" data-external="lib/includes/intro/index.html"></section>
+				<section data-background-image="img/background_2.png" data-external="lib/includes/modules/index.html"></section>
+				<section data-background-image="img/background_2.png" data-external="lib/includes/loaders/index.html"></section>
+				<section data-background-image="img/background_2.png" data-external="lib/includes/es6-modules/index.html"></section>
+				<section data-background-image="img/background_2.png" data-external="lib/includes/transpilers/index.html"></section>
+				<section data-background-image="img/background_2.png" data-external="lib/includes/patrones/index.html"></section>
+				<section data-background-image="img/background_2.png" data-external="lib/includes/patronesMv/index.html"></section>
 
 			</div>
 		</div>
@@ -60,6 +60,7 @@
 		url: 'https://reveal-js-multiplex-ccjbegmaii.now.sh' // Location of socket.io server
 	},
 				dependencies: [
+					{ src: 'plugin/menu/menu.js' },
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },

@@ -9,7 +9,9 @@ $ejie-color-2: #98d6d6;
 
 body {
   background: #FFFFFF;
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  // background-image: url(../../img/background_1.png);
+}
 
 /*COLORS*/
 
@@ -89,6 +91,28 @@ body {
     padding-right: -6rem;
     top: 52%;
   }
+
+  blockquote{
+    color:grey;
+  }
+
+//   blockquote {
+//     margin: 0 0 1rem;
+//   }
+//   blockquote {
+//     display: block;
+//     -webkit-margin-before: 1em;
+//     -webkit-margin-after: 1em;
+//     -webkit-margin-start: 40px;
+//     -webkit-margin-end: 40px;
+//     padding: .5rem 1rem;
+//     margin-bottom: 1rem;
+//     font-size: 1.25rem;
+//     border: none;
+//     border-left: .25rem solid #eceeef;
+// }
+
+
 }
 
 
@@ -178,7 +202,7 @@ body {
 }
 
 
-.fragment.current-visible.visible.hide:not(.current-fragment) {
+.fragment.current-visible.hide:not(.current-fragment), .fragment.current-visible.visible.hide:not(.current-fragment) {
     display: none;
     height:0px;
     line-height: 0px;
