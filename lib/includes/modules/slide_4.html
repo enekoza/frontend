@@ -1,0 +1,20 @@
+<h3>Global imports</h3>
+<pre>
+  <code class="hljs" style="word-wrap: break-word;">
+
+// global function
+function showUsers(users){
+users.map(function(user){
+console.log(user);
+});
+}
+
+(function (x) {
+// body of our module
+var users = ['mohamed', 'karim', 'amine'];
+x(users);
+})(showUsers);
+
+
+  </code>
+</pre>

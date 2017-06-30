@@ -1,0 +1,44 @@
+<h3>Ejemplo</h3>
+
+<div style="display:flex">
+  <div style="width:50%">
+    <pre>
+      <code class="hljs">
+
+  odds  = evens.map(v => v + 1)
+
+  function f (x, y = 7, z = 42) {
+      return x + y + z
+  }
+
+  const PI = 3.141593
+  PI > 3.0
+
+      </code>
+    </pre>
+  </div>
+  <div style="width:50%">
+    <pre>
+      <code class="hljs">
+  odds  = evens.map(function (v) { return v + 1; });
+
+  function f (x, y, z) {
+      if (y === undefined)
+          y = 7;
+      if (z === undefined)
+          z = 42;
+      return x + y + z;
+  };
+
+  Object.defineProperty(typeof global === "object" ? global : window, "PI", {
+      value:        3.141593,
+      enumerable:   true,
+      writable:     false,
+      configurable: false
+  })
+  PI > 3.0;
+
+      </code>
+    </pre>
+  </div>
+</div>

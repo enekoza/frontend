@@ -1,0 +1,31 @@
+<h3>UMD pattern</h3>
+<pre>
+  <code class="hljs" style="word-wrap: break-word;">
+
+(function (root, factory) {
+if (typeof define === 'function' && define.amd) {
+// AMD
+define(['dep1', 'dep2'], factory);
+} else if (typeof exports === 'object') {
+// CommonJS
+module.exports = factory(require('dep1'), require('dep2'));
+} else {
+// Browser globals (Note: root is window)
+root.returnExports = factory(root.dep1, root.dep2);
+}
+}(this, function (dep1, dep2) {
+// Methods
+function notHelloOrGoodbye(){}; // A private method
+function hello(){}; // A public method because it's returned (see below)
+function goodbye(){}; // A public method because it's returned (see below)
+
+// Exposed public methods
+return {
+hello: hello,
+goodbye: goodbye
+}
+}));
+
+
+  </code>
+</pre>

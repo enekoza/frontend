@@ -1,0 +1,19 @@
+<h3>CommonJS Module Pattern</h3>
+<pre>
+  <code class="hljs" style="word-wrap: break-word;">
+
+var users = ['mohamed', 'karim', 'amine'];
+
+module.exports = {
+showUsers: function(){
+users.map(function(user){
+console.log(user);
+});
+},
+addUser: function(name){
+users.push(name);
+}
+}
+
+  </code>
+</pre>

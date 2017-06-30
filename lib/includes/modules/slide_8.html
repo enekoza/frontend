@@ -1,0 +1,27 @@
+<h3>AMD pattern</h3>
+<pre>
+  <code class="hljs" style="word-wrap: break-word;">
+
+// amd pattern simplified implimentation.
+function define(dependencies,cb){
+var dependenciesArray = [];
+dependencies.map(function(dep){dependenciesArray.push(dep());});
+cb.apply(null,dependenciesArray);
+}
+
+function dep1(){
+console.log('dep1');return 'bingo';
+}
+
+function dep2(){
+console.log('dep2');return 'mingo';
+}
+
+define([dep1,dep2],function(dep1,dep2){
+console.log('dep1 returned : ',dep1);
+console.log('dep2 returned : ',dep2);
+})
+
+
+  </code>
+</pre>
