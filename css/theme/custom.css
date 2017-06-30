@@ -95,3 +95,11 @@ span.clouditem {
   padding-right: 0.15em;
   line-height: 90%;
 }
+
+
+.reveal section img.img-hover{
+  border:0;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
