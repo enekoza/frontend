@@ -1,0 +1,34 @@
+<h3>Patrón Singleton</h3>
+<ul>
+  <li>Patrón de creación.</li>
+  <li>Asegurar que una clase genera una única instancia</li>
+  <li>Acceso global</li>
+  <br/>
+
+  <pre><code class="hljs" style="word-wrap: break-word;">
+
+  var mySingleton = (function() {
+
+    //Singleton constructor is private
+    function Singleton() {
+        var privateVar1 = "I'm a private var";
+        this.publicVar1 = "I'm a public var";
+        this.publicMethod1 = function() {
+            console.log("Private var: " + privateVar1 + " public var: " + this.publicVar1);
+        }
+    }
+
+    //private var to store the single instance
+    var singleInstance;
+
+    //Return the object providing getInstance method
+    return {
+        getInstance: function() {
+            if (!singleInstance) singleInstance = new Singleton();
+            return singleInstance;
+
+        }
+    }
+
+})()
+</pre></code>
