@@ -24,15 +24,31 @@
 		</script>
 	</head>
 	<body>
+		<div class="ejie-backgrounds ">
+			<div id="front-bg" class="front-bg" >
+				<div class="ejie-front-shape1"></div>
+				<div class="ejie-front-shape2"></div>
+				<img src="img/bg_footer_1.png" class="ejie-front-footer-bg"/>
+			</div>
+			<div id="slides-bg" class="slides-bg">
+				<div class="ejie-slides-shape1"></div>
+				<div class="ejie-slides-shape2"></div>
+				<div class="ejie-slides-shape3"></div>
+				<div class="ejie-slides-shape4"></div>
+				<img src="img/bg_header_2.png" class="ejie-slides-header-bg"></div>
+			</div>
+		</div>
+
 		<div class="reveal">
 			<div class="slides">
-				<section data-external="lib/includes/intro/index.html"></section>
-				<section data-external="lib/includes/loaders/index.html"></section>
-				<section data-external="lib/includes/modules/index.html"></section>
-				<section data-external="lib/includes/es6-modules/index.html"></section>
-				<section data-external="lib/includes/transpilers/index.html"></section>
+				<section data-external="lib/includes/front/index.html"></section>
+				<section  data-external="lib/includes/intro/index.html"></section>
+				<section  data-external="lib/includes/modules/index.html"></section>
+				<section  data-external="lib/includes/loaders/index.html"></section>
+				<section  data-external="lib/includes/es6-modules/index.html"></section>
+				<section  data-external="lib/includes/transpilers/index.html"></section>
 				<section data-external="lib/includes/patrones/index.html"></section>
-				<section data-external="lib/includes/patronesMv/index.html"></section>
+				<section  data-external="lib/includes/patronesMv/index.html"></section>
 
 			</div>
 		</div>
@@ -59,6 +75,7 @@
 		url: 'https://reveal-js-multiplex-ccjbegmaii.now.sh' // Location of socket.io server
 	},
 				dependencies: [
+					{ src: 'plugin/menu/menu.js' },
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
@@ -72,6 +89,25 @@
 					// { src: 'plugin/notes-server/client.js', async: true }
 				]
 			});
+
+			function manageBackground(event){
+				var state = Reveal.getState();
+
+				if (state.indexh===0){
+					document.getElementById("front-bg").classList.remove("hidden");
+					document.getElementById("slides-bg").classList.add("hidden");
+
+				}else{
+					document.getElementById("front-bg").classList.add("hidden");
+					document.getElementById("slides-bg").classList.remove("hidden");
+				}
+
+
+			}
+
+			Reveal.addEventListener( 'ready', manageBackground);
+
+			Reveal.addEventListener( 'slidechanged', manageBackground);
 		</script>
 	</body>
 </html>
