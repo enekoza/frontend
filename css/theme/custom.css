@@ -52,33 +52,33 @@ body {
 
 .ejie-backgrounds .ejie-slides-shape1 {
   width: 100%;
-  height: 2rem;
+  height: 10px;
   background: #22acac;
-  bottom: 7rem;
+  bottom: 20px;
   position: fixed; }
 
 .ejie-backgrounds .ejie-slides-shape2 {
   width: 60%;
-  height: 2rem;
+  height: 10px;
   right: 8%;
   background: #eaeaea;
-  bottom: 12rem;
+  bottom: 40px;
   position: fixed; }
 
 .ejie-backgrounds .ejie-slides-shape3 {
-  width: 2rem;
-  height: 12rem;
+  width: 10px;
+  height: 40px;
   right: 8%;
   background: #eaeaea;
   bottom: 0;
   position: fixed; }
 
 .ejie-backgrounds .ejie-slides-shape4 {
-  width: 2rem;
-  height: 4rem;
+  width: 10px;
+  height: 20px;
   right: 68%;
   background: #eaeaea;
-  bottom: 10rem;
+  bottom: 30px;
   position: fixed; }
 
 .ejie-backgrounds .ejie-slides-header-bg-1 {
@@ -103,10 +103,20 @@ body {
   right: 0;
   z-index: 2; }
 
+@media (max-width: 767px) {
+  .ejie-slides-header-bg-1 {
+    transform: scale(0.5);
+    transform-origin: 0 0; }
+  .ejie-slides-header-bg-2 {
+    transform: scaleY(0.5);
+    transform-origin: top; }
+  .ejie-slides-header-bg-3 {
+    display: none; } }
+
 /*COLORS*/
 .reveal {
   font-size: 30px;
-  margin-top: 6rem; }
+  margin-top: 20px; }
   .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
     color: #009898; }
   .reveal ul {
@@ -217,3 +227,7 @@ span.clouditem {
   left: 8%;
   box-shadow: none;
   background: none; }
+
+@media (max-width: 767px) {
+  .reveal {
+    margin-top: 0; } }
