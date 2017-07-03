@@ -66,7 +66,7 @@ body {
 
 
   .ejie-slides-header-bg{
-    position: static;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -117,6 +117,12 @@ body {
   h1, h2, h3, h4, h5, h6{
     color: $ejie-color-1;
   }
+
+  margin-top: 6rem;
+
+  // .slides{
+  //   margin-top: 9rem;
+  // }
 
   ul {
     list-style: none; /* Remove list bullets */
@@ -169,6 +175,12 @@ body {
     left: 40%;
     padding-right: -6rem;
     top: 52%;
+  }
+
+  .module-loaders-img{
+    img{
+      // height: 60%;
+    }
   }
 
   blockquote{
@@ -281,7 +293,7 @@ body {
 }
 
 
-.fragment.current-visible.hide:not(.current-fragment), .fragment.current-visible.visible.hide:not(.current-fragment) {
+.fragment.fade-out.hide.visible, .fragment.current-visible.hide:not(.current-fragment), .fragment.current-visible.visible.hide:not(.current-fragment) {
     display: none;
     height:0px;
     line-height: 0px;
@@ -304,7 +316,7 @@ span.clouditem {
   border:0;
   position: fixed;
   left: 8%;
-height: 80%;
+// height: 80%;
 box-shadow: none;
 background: none;
 
