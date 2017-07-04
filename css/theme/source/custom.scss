@@ -357,6 +357,8 @@ span.clouditem {
 
 
 .reveal section img.img-hover{
+  width: 80%;
+ margin-top: 0;
   border:0;
   position: fixed;
   left: 8%;
@@ -366,8 +368,18 @@ background: none;
 
 }
 
+.reveal .module-div {
+  font-size: 1.3rem;
+    padding-bottom: 2rem;
+
+}
+
 @media (max-width:767px) {
   .reveal{
     margin-top: 0;
   }
+}
+
+.img-print{
+  display: none;
 }

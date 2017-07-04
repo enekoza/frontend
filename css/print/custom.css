@@ -1,0 +1,37 @@
+.reveal{
+  font-size: 20px ;
+  /*margin-top: 100px !important;*/
+}
+
+.pdf-page h2, .pdf-page h3{
+  padding-top: 30px !important;
+
+}
+
+.front-bg{
+  display: none;
+}
+
+.fragment{
+  opacity: 1 !important;
+display: block !important;
+visibility: visible !important;
+height: inherit !important;
+line-height: inherit !important;
+font-size: inherit !important;
+}
+
+
+.img-print{
+  display: inherit !important;
+  border: 0 !important;
+  visibility: visible !important;
+    position: absolute !important;
+    width: 80%;
+}
+
+.module-loaders-img{
+  display: none !important;
+  visibility: hidden !important;
+  position: absolute !important;
+}
