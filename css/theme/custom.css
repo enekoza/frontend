@@ -113,6 +113,14 @@ body {
   .ejie-slides-header-bg-3 {
     display: none; } }
 
+.revel {
+  .module-loaders-img{
+    img{
+      left:
+    }
+  }
+}
+
 /*COLORS*/
 .reveal {
   font-size: 30px;
@@ -222,6 +230,8 @@ span.clouditem {
   line-height: 90%; }
 
 .reveal section img.img-hover {
+  width: 80%;
+  margin-top: 0;
   border: 0;
   position: fixed;
   left: 8%;
