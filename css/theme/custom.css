@@ -238,6 +238,11 @@ span.clouditem {
   box-shadow: none;
   background: none; }
 
+.reveal .module-div {
+  font-size: 1.3rem;
+    padding-bottom: 2rem;
+
+}
 @media (max-width: 767px) {
   .reveal {
     margin-top: 0; } }
